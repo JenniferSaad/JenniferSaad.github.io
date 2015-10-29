@@ -1,190 +1,51 @@
-<!DOCTYPE html>
 <html>
 <head>
-<title>Assignment 1</title>
-<style>
-
-
-
-
-h1
-{
-text-align: center;
-line-height: 100%;
-padding:110px;
-background-color:rgb(255,192,203);
-color:black;
-margin-top: -15px;
-margin-bottom: 10px;margin-left:50px;
- 
-}
-
-h2
-{
-color:black;
-margin-left:  610px;
-font-size:130%;
-}
 
  
-.text{text-align: center;font-size:40px;font-style:italic;margin-right:-180px;margin-top:145px;}                                                                                                                             
-.paragraph {
-        text-indent: 50px;
-    display: block;margin-left:22%; 
-    line-height: 200%;
-        font-size:1.25em; 
+	<link rel="stylesheet" href="css.css">
 
-} 
-
-.image{     
-
-
-
-        height:335px;width:250px;background-size: contain;
-      background-image:url("https://cloud.githubusercontent.com/assets/14961327/10388316/80dd98f6-6e71-11e5-9d4d-c0cd5be6f21a.png");
-     position: absolute;background-repeat: no-repeat;
-    background-position: left top;
-    margin-top: 0px;   margin-left:-45px;
-
-
-}
-#footer{
-
-
-background-color:rgb(255,192,203);background-position:90px;
-    color:black;background-size:200px;
-    clear:both;
-    text-align:center;height:0px;
-   padding:30px;width:1521px;
-margin-left:-4.0%;margin-top:0px;margin-bottom:0px;
-
-
-
-}
-
-div {line-height:30px;
-    background-color:rgb(255,192,203);
-    height:1000px;
-    width:100px;
-    float:left;
-    padding:81px;
-margin-left:-50px;margin-top:-355px;   }
-div a {
-    text-decoration: none;line-height:50px;
-    color: black;
-    font-size: 14px;font-weight:bold;
-    padding: 15px;
- }
  
-ul {
-  margin: 0;
-  padding: 0;
-}
-ul li {display: inline-block;}
-ul li:hover {background: #555;width:80px;}
-ul li:hover ul {display: block;width:80px;}
-ul li ul {
-  position: absolute;
-  width: 200px;
-  display: none;
-}
-ul li ul li { 
-  background: #555; 
-  display: block; 
-}
-ul li ul li a {display:block !important;} 
-ul li ul li:hover {background: rgb(255,192,203);}
 
-<script>
-function validateForm() {
-    var x = document.forms["myForm"]["fname"].value;
-    var y = document.forms["myyForm"]["fname"].value;
-if ((x == null || x == "")&&(y == null || y == "")) {
-        alert("First Name and Last Name must be filled out");
-        return false;
-    }
-    if (x == null || x == "") {
-        alert("First Name must be filled out");
-        return false;
-    }
-
-if (y == null || y == "") {
-        alert("Last Name must be filled out");
-        return false;
-    }
-}
-</script>
-
-
-
-</style>
 </head>
-<body>
-<p class="image">
-  
-</p>
 
-<h1>Assg.1: CSS, JavaScript, and Forms   
 
-</h1><h2>Brought to you by Jennifer Saad</h2>  
-<p class="text">Welcome to my assignment 1 page
-</p>
+<body >
  
-  <div>
-  <a href="#">Home</a>
-    <ul></ul><a href="#">About Me</a>
-  <ul>
+	<header> <div> 
+	<img id = "photo" src="https://cloud.githubusercontent.com/assets/14961327/10388316/80dd98f6-6e71-11e5-9d4d-c0cd5be6f21a.png">
+	<h1>Assignment 1: CSS, JavaScript, and Forms</h1>
+	<h2>Brought to you by Jennifer Saad </h2>
+	</div> </header>
+	 
+
+ 
+	<nav> <div id="nav" >
+	<a href="myHome.html" >Home</a>
+	<hr/>
+	<a href="aboutMe.html" >About Me</a>
+	<hr/>
+	 <ul>
     <li>
-      <a href="#">Courses</a>
+      <a href="css.css">Courses</a>
       <ul>
-        <li><a href="#">CP1</a></li>
-        <li><a href="#">CP2</a></li>
-        <li><a href="#">CO</a></li>
+        <li><a href="css.css">CP1</a></li>
+        <li><a href="css.css">CP2</a></li>
+        <li><a href="css.css">CO</a></li>
       </ul>
     </li>
   </ul><br>
-<form name="myForm" action="#" onsubmit="return validateForm()">
-First Name: <input type="text" name="fname">
+	<hr/>
+	<a href="myForm.html" >Guests</a>
+	<hr/>
+	 
+	</div> </nav>
+
+
+
  
-</form><br>
-
-<form name="myyForm" action="#" onsubmit="return validateForm()" method="post">
-Last Name: <input type="text" name="fname">
-<input type="submit" value="Submit">
-</form></div>
-<p class="paragraph">This is my assignment 1 page. I need to use appropriate colors and fonts to have an appealing page. Moreover, I need to use CSS to create a pull-down menu for the courses that I have taken so far. Using Javascript I need to verify if the form of the Guest Book is properly filled. 
-I used the following code: 
-
-  <br><br> Method:<br><br>
- 
-</p><p class="paragraph">function validateForm() {
-    var x = document.forms["myForm"]["fname"].value ;
-    var y = document.forms["myyForm"]["lname"].value ;
-  <br>if ((x == null || x == "")&amp;&amp;(y == null || y == "")) <br>{
-<br> alert("First Name and Last Name must be filled out");<br>
-        return false;
-    }<br>
-    if (x == null || x == "") {
-        alert("First Name must be filled out");
-        return false;
-}</br>
-<br>
-if (y == null || y == "") {
-        alert("Last Name must be filled out");
-        return false;
-    }
-}</br></p> 
-
-<p></p><br>
-
-
-
-
-<p></p>
-
-
-
-<div id="footer">CSC 443, Assg 1, Fall 2015</div>
+	<footer> <div id="footer" >
+	CSC 443 , Assignment1, Fall 2015.
+	</div> </footer>
 
 </body>
 </html>
