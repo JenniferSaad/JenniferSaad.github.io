@@ -8,19 +8,77 @@
 
 </head>
 
+<script>
+ 
+function red() {
+        document.body.style.backgroundColor = "red";
 
+}
+function Yellow() {
+        document.body.style.backgroundColor = "yellow";
+
+}function Green() {
+        document.body.style.backgroundColor = "green";
+
+}function Black() {
+        document.body.style.backgroundColor = "black";
+
+}function Silver() {
+        document.body.style.backgroundColor = "silver";
+
+}
+ 
+function error(x) {
+ 
+    document.getElementById("demo").innerHTML = "Why are you hovering?";
+ 
+}
+
+function noError(x) {
+       document.getElementById("demo").innerHTML = " ";
+
+}
+function random(){
+if ( ((Math.random())*10+1)>=0 && ((Math.random())*10+1)<2 ) {
+    text = "<a href='http://slashdot.org/'><button>Click Me!</button></a>";
+} else 
+if ( ((Math.random())*10+1)>=2 && ((Math.random())*10+1)<4 ){
+    text = "<a href='http://www.thinkgeek.com/'><button>Click Me!</button></a>";
+}else 
+if ( ((Math.random())*10+1)>=4 && ((Math.random())*10+1)<6 ){
+    text = "<a href='http://despair.com/'><button>Click Me!</button></a>";
+}else 
+if ( ((Math.random())*10+1)>=6 && ((Math.random())*10+1)<8 ){
+    text = "<a href='http://www.redbubble.com/'><button>Click Me!</button></a>";
+}else 
+if ( ((Math.random())*10+1)>=8 && ((Math.random())*10+1)<10 ){
+    text = "<a href='http://googleresearch.blogspot.com/'><button>Click Me!</button></a>";
+}else 
+ {
+    text = "<a href='https://developers.google.com/speed/libraries/'><button>Click Me!</button></a>";
+}
+document.getElementById("demo2").innerHTML = text;}
+
+</script>
 <body >
  
 	<header> <div> 
-	<img id = "photo" src="https://cloud.githubusercontent.com/assets/14961327/10388316/80dd98f6-6e71-11e5-9d4d-c0cd5be6f21a.png">
+	<img onmouseover="error(this)" onmouseout="noError(this)" id = "photo" src="023.png">
+	
 	<h1>Assignment 1: CSS, JavaScript, and Forms</h1>
 	<h2>Brought to you by Jennifer Saad </h2>
+	
 	</div> </header>
-	 
+	
+	<p id="demo"></p>
+	
+	<p>
+	<button onclick="red()">Red</button><button onclick="Yellow()">Yellow</button><button onclick="Green()">Green</button><button onclick="Black()">Black</button><button onclick="Silver()">Silver</button>
+	</p>
+ <p id="demo2"onclick=" random()"><button> Click Me!</button></p>
 
- 
-	<nav> <div id="nav" >
-	<a href="myHome.html" >Home</a> 
+	<nav> <div id="nav" ><br>
+	<a href="myHome.html" >Home</a>
 	<hr/>
 	<a href="aboutMe.html" >About Me</a>
 	<hr/>
@@ -45,7 +103,7 @@
  
 	<footer> <div id="footer" >
 	CSC 443 , Assignment1, Fall 2015.
-	</div> </footer> 
+	</div> </footer>
 
 </body>
 </html>
